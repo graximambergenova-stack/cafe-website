@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <title>Cafe Gulbaniw</title>
+</head>
+<body>
+
+  <!-- 1. NAVBAR -->
+   <nav class="navbar navbar-expand-md navbar-dark bg-dark sticy-top">
+<div class="container">
+    <a href="#" class="navbar-brand fw-bold">Cafe Gulbaniw</a>
+<button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navMenu">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navMenu">
+  <ul class="navbar-nav ms-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="#menu-section">Menu</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#prices">Prices</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+    </li>
+
+    <!-- nav-item ham nav-link klasslarin payadalangan halda tagi eki silteme qosin -->
+  </ul>
+</div>
+</div>
+   </nav>
+  <!-- 2. CAROUSEL -->
+   <div id="menuCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="https://thepaleodiet.com/wp-content/uploads/2023/05/Fruit-e1685128440565.jpg" class="d-block w-100" style="aspect-ratio:16/9; object-fit:cover" height="900" alt="photo">
+      <div class="carousel-caption"><h5>fruits</h5></div>  <!-- ← ozgert -->
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://www.allrecipes.com/thmb/kgZB2WpV5NUBsd0XPOkcOOV9SEY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/23290-pizza-dough-iii-VAT-Beauty-4x3-06192801c8fa48fe8afaadfea28f532b.jpg" class="d-block w-100" style="aspect-ratio:16/9; object-fit:cover" height="900" alt="photo">
+      <div class="carousel-caption"><h5>pizza</h5></div>   <!-- ← ozgert -->
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://static01.nyt.com/images/2025/07/16/multimedia/cr-summer-fruit-salad-lgvk/cr-summer-fruit-salad-lgvk-mediumSquareAt3X.jpg" class="d-block w-100" style="aspect-ratio:16/9; object-fit:cover" height="900" alt="photo">
+      <div class="carousel-caption"><h5>salad</h5></div> <!-- ← ozgert -->
+    </div>
+
+  </div>
+  <button class="carousel-control-prev" data-bs-target="#menuCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span></button>
+  <button class="carousel-control-next" data-bs-target="#menuCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span></button>
+</div>
+  <!-- 3. HERO -->
+   <section class="bg-dark text-white text-center py-5">
+    <div class="container">
+    <h1 class="display-4 fw-bold mb-3">Cafe Gulbaniw</h1>
+    <p class="lead text-light mb-4">A cozy place in the heart of the city
+    </p>
+    <a button class="btn btn-warning btn-lg px-5" href="#menu-section">Menu</a>
+</div>
+   </section>
+  <!-- 4. ALERT -->
+   <div class="container mt-4 ">
+   <div class="alert alert-warning alert-dismissible fade show"> <strong>special offer! Every Tuesday-free coffee with any breakfast order.</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+</div>
+   </div>
+
+  <!-- 5. MENU CARDS -->
+   <section class="py-5 bg-light" id="menu-section">
+    <div class="container">
+<h2 class="text-center fw-bold mb-4">Our menu</h2>
+<div class="row g-4">
+  <div class="col-12 col-md-4">
+  <div class="card h-100 shadow-sm">
+
+    <img src="https://latte.ru/wa-data/public/site/img/capp.jpeg" class="card-img-top object-fit-cover"
+         style="height:180px"
+         alt="Cappuccino">   <!-- ← ozgert: suwret -->
+                    <!-- ← ozgert: awqat ati -->
+
+    <div class="card-body">
+
+      <!-- awqat ati + bahasi bir qatarda -->
+      <div class="">
+        <h5 class="card-title mb-0">Cappuccino</h5>        <!-- ← awqat ati -->
+        <span class="badge bg-warning text-dark">25 000 </span>  <!-- ← bahasi -->
+      </div>
+
+      <!-- qosimsha badge (shart emes) -->
+      <span class="badge bg-danger mb-2">Hit</span>                <!-- ← yamasa qatardi oshirip taslan -->
+
+      <!-- sipatlamasi -->
+      <p class="card-text text-muted">
+        Soft coffee with milk foam.              
+      </p>
+
+      <!-- buyirtpa knopkasi -->
+      <button class="btn btn-outline-dark btn-sm w-100 mt-2 btn-order">Order</button>
+
+    </div>  <!-- card-body aqiri -->
+  </div>  <!-- kartochka aqiri -->
+</div>  <!-- bagana aqiri --> 
+
+<div class="col-12 col-md-4">
+  <div class="card h-100 shadow-sm">
+
+    <img src="https://www.allrecipes.com/thmb/kgZB2WpV5NUBsd0XPOkcOOV9SEY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/23290-pizza-dough-iii-VAT-Beauty-4x3-06192801c8fa48fe8afaadfea28f532b.jpg" class="card-img-top object-fit-cover"
+         style="height:180px"
+         alt="Cappuccino">      <!-- ← ozgert: suwret -->
+                 <!-- ← ozgert: awqat ati -->
+
+    <div class="card-body">
+
+      <!-- awqat ati + bahasi bir qatarda -->
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <h5 class="card-title mb-0">pizza</h5>        <!-- ← awqat ati -->
+        <span class="badge bg-warning text-dark">65 000 </span>  <!-- ← bahasi -->
+      </div>
+
+      <!-- qosimsha badge (shart emes) -->
+      <span class="badge bg-danger mb-2">New</span>                <!-- ← yamasa qatardi oshirip taslan -->
+
+      <!-- sipatlamasi -->
+      <p class="card-text text-muted">
+        Tomato and Ricotta Pizza              
+      </p>
+
+      <!-- buyirtpa knopkasi -->
+      <button class="btn btn-outline-dark btn-sm w-100 mt-2 btn-order">Order</button>
+
+    </div>  <!-- card-body aqiri -->
+  </div>  <!-- kartochka aqiri -->
+</div>  <!-- bagana aqiri -->
+<div class="col-12 col-md-4">
+  <div class="card h-100 shadow-sm">
+
+    <img src="https://www.tamingtwins.com/wp-content/uploads/2025/07/Greek-Salad-4.jpg"  class="card-img-top object-fit-cover"
+         style="height:180px"
+         alt="Cappuccino">    <!-- ← ozgert: suwret -->
+                  <!-- ← ozgert: awqat ati -->
+
+    <div class="card-body">
+
+      <!-- awqat ati + bahasi bir qatarda -->
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <h5 class="card-title mb-0">salad</h5>        <!-- ← awqat ati -->
+        <span class="badge bg-warning text-dark">40 000 </span>  <!-- ← bahasi -->
+      </div>
+
+      <!-- qosimsha badge (shart emes) -->
+      <span class="badge bg-danger mb-2">Spicy</span>                <!-- ← yamasa qatardi oshirip taslan -->
+
+      <!-- sipatlamasi -->
+      <p class="card-text text-muted">
+        Greek Salad            
+      </p>
+
+      <!-- buyirtpa knopkasi -->
+      <button class="btn btn-outline-dark btn-sm w-100 mt-2 btn-order">Order</button>
+
+    </div>  <!-- card-body aqiri -->
+  </div>  <!-- kartochka aqiri -->
+</div>  <!-- bagana aqiri -->
+
+
+</div>
+
+    </div>
+   </section>
+  <!-- 6. PRICE TABLE -->
+   <section class="py-5" id="prices">
+    <div class="container">
+    <h2 class="text-center fw-bold">All Prices</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover table-striped">
+<thead class="table-dark">
+<tr>
+  <th>Dish</th>
+  <th>Prices</th>
+  <th>Category</th>
+  <th>Status</th>
+</tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Cappuccino</td>
+    <td>25 000</td>
+    <td>drink</td>
+    <td><span class="badge text-bg-success">In stock</span></td>
+  </tr>
+  <tr >
+    <td>pizza</td>
+    <td>40 000</td>
+    <td>food</td>
+    <td><span class="badge text-bg-success">In stock</span></td>
+  </tr>
+  <tr >
+    <td>Juice</td>
+    <td>12 000</td>
+    <td>drink</td>
+    <td><span class="badge text-bg-success">In stock</span></td>
+  </tr>
+  <tr class="table-warning">
+    <td>Ice cream</td>
+    <td>5000</td>
+    <td>dessert</td>
+    <td><span class="badge text-bg-warning">hit</span></td>
+  </tr>
+  <tr >
+    <td>cake</td>
+    <td>70 000</td>
+    <td>dessert</td>
+    <td><span class="badge text-bg-success">seasonal</span></td>
+  </tr>
+</tbody>
+      </table>
+    </div>
+    </div>
+   </section>
+  <!-- 7. TOAST -->
+   <section id="about" class="py-5 bd-light">
+<div class="container">
+  <h2 class="text-center fw-bold mb-4">About</h2>
+  <div class="row justify-content-center">
+<div class="col-12 col-md-6 text-center">
+<p>Gulbaniw cafe is a cozy and modern place located
+  in the city center.It offers a variety
+  of food such as burgers,pizza,and desserts,as well
+  as drinks like coffee and tea.
+</p>
+<p>
+  Prices are affordable , and the service is fast and friendly.The atmosphere is comfortable, making it a great
+  placeto relax with friends.
+</p>
+</div>
+  </div>
+</div>
+   </section>
+   <div class="position-fixed bottom-0 end-0 p-3" style="z-index:9999">
+  <div id="orderToast" class="toast align-items-center text-white bg-success">
+    <div class="d-flex">
+      <div class="toast-body">
+        ✅ Buyirtpa qabillandi! 15 minut kuting.  <!-- ← tekstti ozgert -->
+      </div>
+      <button class="btn-close btn-close-white me-2 m-auto btn-order" data-bs-dismiss="toast"></button>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll('.btn-order').forEach(btn => {
+    btn.addEventListener('click', () => {
+      new bootstrap.Toast(document.getElementById('orderToast')).show();
+    });
+  });
+</script>
+<section class="py-5 bg-light">
+<div class="container">
+  <h2 class="text-center fw-bold">Reviews</h2>
+  <div class="row g-4-grid">
+     <div class="col-12 col-md-4">
+  <div class="card h-100 shadow-sm">
+    
+      <img src="https://latte.ru/wa-data/public/site/img/capp.jpeg" class="card-img-top object-fit-cover"
+         style="height:180px"
+         alt="Cappuccino">  
+    <div class="card-body">      
+      <div class="d-flex">
+        <h5 class="card-title mb-0">Diana</h5>            
+      <span class="badge  text-dark ">⭐⭐⭐⭐⭐</span>  
+           </div>               
+      <p class="card-text text-muted">
+        The cappuccino was warm and smooth.It had a rich coffee taste with soft foam on top.
+        The flavor was well-balanced and and not too strong.I really emjoyed it.           
+      </p>
+    </div>  
+  </div>  
+</div>  
+<div class="col-12 col-md-4">
+  <div class="card h-100 shadow-sm">
+    <img src="https://www.allrecipes.com/thmb/kgZB2WpV5NUBsd0XPOkcOOV9SEY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/23290-pizza-dough-iii-VAT-Beauty-4x3-06192801c8fa48fe8afaadfea28f532b.jpg" class="card-img-top object-fit-cover"
+         style="height:180px"
+         alt="Cappuccino">     
+    <div class="card-body">
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <h5 class="card-title mb-0">Saltanat</h5>        
+        <span class="badge  text-dark">⭐⭐⭐⭐⭐</span>  
+        </div>
+      <p class="card-text text-muted">
+        The pizza was very delicious.The crust was crispy outside and soft inside.The cheese was perfectly melted,and the
+        toppings were fresh and tasty             
+      </p>
+    </div> 
+  </div>  
+</div>  
+<div class="col-12 col-md-4">
+  <div class="card h-100 shadow-sm">
+    <img src="https://www.tamingtwins.com/wp-content/uploads/2025/07/Greek-Salad-4.jpg"  class="card-img-top object-fit-cover"
+         style="height:180px"
+         alt="Cappuccino">                    
+    <div class="card-body">      
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <h5 class="card-title mb-0">Layla</h5>        
+        <span class="badge  text-dark">⭐⭐⭐⭐⭐ </span>  
+      </div>
+      <p class="card-text text-muted">
+        The salad was fresh and light.The vegetables were crunchy
+        and the dressing added a nice flovor.It was healthy and refreshing.    
+      </p>
+    </div>
+  </div>  
+</div>   
+   
+</section>
+  <!-- 8. FOOTER -->
+   <footer class="bg-dark text-white text-center py-4 mt-5">
+<div class="container">
+  <p class="fw-bold">Gulbaniw Cafe</p>
+  <p class="text-white">Qaraqalpaqstan , Taxtakopir</p>
+  <p class="text-white">08:00 22:00</p>
+</div>
+   </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
